@@ -21,6 +21,47 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-color); 
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--text-color); 
+  border-radius: 10px; 
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--link-color); 
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--text-color); 
+  border-radius: 10px; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--link-color); 
+}
+
+/* Firefox */
+body {
+  scrollbar-width: thin; 
+  scrollbar-color: var(--text-color) var(--background-color); 
+}
+
+
+
+
 /* FONT STUFFFFFFFFFFFFFFFFFFFFFFFFFFF */
 
 body {
@@ -31,6 +72,7 @@ body {
   color: var(--text-color);
   padding: 20px;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
