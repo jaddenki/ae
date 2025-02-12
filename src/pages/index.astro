@@ -1,5 +1,6 @@
 ---
-
+import MainLayout from '../layouts/MainLayout.astro';
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -8,11 +9,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>hello</title>
 	</head>
 	<body>
-		<h1>after effects</h1>
-		<p> i'm just testing this out :3 </p>
-		<li><a href="/posts/home/">okay bruh<a></li>
+		<MainLayout>
+			<h1>hello!</h1>
+			<p>Welcome to a collection of reference notes & guides for <a href="https://www.adobe.com/products/aftereffects.html" target="_blank">After Effects</a>, compiled by <a href="https://jadden.xyz" target="_blank">Jadden Picardal.</a> Designed for beginners looking to get started & experienced users looking to learn a bit more about AE. <br><br>This project is very much a work in progress and I will add onto it over time!<br><br>(it kind of is an excuse for me to learn <a href="https://astro.buid" target="_blank">Astro</a> as well hehe)</p>
+		</MainLayout>
 	</body>
 </html>

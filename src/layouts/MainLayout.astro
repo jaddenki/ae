@@ -1,0 +1,37 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/favicon(1).ico" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+    <title>ae tutorial</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>jajadocs</h2>
+        <nav>
+          <ul>
+            <li><a href="/">hello</a></li>
+            <li><a href="/posts/getting-started/">getting started</a></li>
+            <li><a href="/posts/in-progress/">keyframes and animation</a></li>
+            <li><a href="/posts/in-progress/">layers and effects</a></li>
+            <li><a href="/posts/in-progress/">shape layers</a></li>
+            <li><a href="/posts/in-progress/">null objects and parenting</a></li>
+            <li><a href="/posts/in-progress/">text animation and typography</a></li>
+            <li><a href="/posts/in-progress/">working in 3d</a></li>
+            <li><a href="/posts/in-progress/">masks and mattes</a></li>
+            <li><a href="/posts/in-progress/">animating for web</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content">
+        <slot></slot>
+      </div>
+    </div>
+  </body>
+</html>

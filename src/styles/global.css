@@ -1,0 +1,173 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #005f99;
+  --background-color: #fff;
+  --text-color: #000;
+  --header-background: #007acc;
+  --header-text-color: #fff;
+  --footer-background: #007acc;
+  --footer-text-color: #fff;
+  --link-color: #0000ff;
+  --link-hover-color: #000000;
+  --border-color: #000;
+  --blockquote-background: #ffffff;
+  --blockquote-border: #0000ff;
+  --blockquote-text: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONT STUFFFFFFFFFFFFFFFFFFFFFFFFFFF */
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 2.5em; 
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1em;
+}
+
+/*NO MORE FONT*/
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+header {
+  background: var(--background-color);
+  color: var(--text-color);
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+  padding: 2px;
+
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--background-color);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+    box-shadow: 10px 10px 0 var(--border-color);
+}
+
+.main-content {
+  flex: 3;
+  padding-right: 20px;
+}
+
+.sidebar {
+font-size:.9em;
+  flex: 1;
+  padding-left: 2px;
+  padding-right: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  border-top: 2px solid var(--border-color);
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid var(--border-color);
+  margin: 20px 0;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  margin-left: 20px; 
+}
+
+code {
+    border:var(--border-color) 1px solid;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size:smaller;
+}
+
+blockquote {
+  background: var(--blockquote-background);
+  border: 1px solid var(--border-color);
+  font-size: smaller;
+  border-radius:4px;
+  margin: 20px 0;
+  padding: 10px 20px;
+  color: var(--blockquote-text);
+  box-shadow: 5px 5px 0 var(--border-color);
+}
+::selection {
+  background: var(--link-color);
+  color: var(--background-color);
+}
